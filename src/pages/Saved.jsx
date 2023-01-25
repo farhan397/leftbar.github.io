@@ -1,0 +1,9 @@
+import React from 'react'
+
+function Saved() {
+  return (
+    <div className="title"> Saved </div>
+  )
+}
+
+export default Saved
