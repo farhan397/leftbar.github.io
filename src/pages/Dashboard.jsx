@@ -258,6 +258,7 @@ function Dashboard() {
       
       <div className="searchuser">
        <h1 className='text-center mt-4'>User Information</h1>
+      
         <Form>
           <InputGroup className='my-3'>
 
@@ -265,6 +266,7 @@ function Dashboard() {
             <Form.Control onChange={(e)=>handlesearch(e)} placeholder='Search...'/>
           </InputGroup>
         </Form>
+      
         </div>
         <div className="mainuser">
         <div className='table_cont'>
@@ -290,7 +292,7 @@ function Dashboard() {
           </div>
           
           <div className="tablebtn">
-          {/* {userinfo.length < 1 && <div>No User Added</div>} */}
+          
          
           <Button variant="primary" className="adduserbtn" type="adduserbtn" on onClick={adduserbtn} 
           style={{

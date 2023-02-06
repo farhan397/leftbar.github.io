@@ -10,10 +10,18 @@ const View = ({userinfo,deleteuserinfo,edituserinfo}) => {
             <td>
               <button className='edit' 
                onClick={()=>edituserinfo(userinformation.userNames,userinformation.useremails,userinformation.userpass,userinformation.userphone)}
-                type='button'>Edit</button>
+                type='button' style={{
+                  paddingLeft:10,
+                  paddingRight:10,
+                  
+               }}>Edit</button>
             </td>
             <td>
-              <button className='delete' onClick={()=>deleteuserinfo(userinformation.useremails)}  type='button'>Delete</button>
+              <button className='delete' onClick={()=>deleteuserinfo(userinformation.useremails)}  type='button' style={{
+                  paddingLeft:10,
+                  paddingRight:10,
+                  
+               }}>Delete</button>
             </td>
                    
         </tr>          
