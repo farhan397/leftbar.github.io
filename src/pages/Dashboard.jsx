@@ -102,7 +102,7 @@ function Dashboard() {
       }
       if(issubmit===false){
         console.log(issubmit);
-        alert("some thing is missing")
+       // alert("some thing is missing")
 
       }
       else{
