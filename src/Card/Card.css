@@ -1,0 +1,84 @@
+.CompactCard {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0.5;
+  min-width:230px;
+  min-height:290px;
+  /* background-color: rgb(233, 241, 238); */
+  
+
+  position: relative;
+  
+  }
+  .fullcard{
+    align-items:center;
+  justify-content:center;
+  flex:0.5;
+  min-width:230px;
+  min-height:290px;
+  background-color: rgb(208, 247, 232);
+  
+  margin:5px;
+  padding-bottom: 10px;
+
+  }
+
+
+
+  /* .CompactCard:hover {
+    box-shadow: none !important;
+  }
+   */
+  /* radial bar */
+  .radialBar {
+    display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  }
+  .CompactCard > img {
+    width: 230px;
+    height: 270px; 
+  }
+  
+  
+  /* .CompactCard > span {
+    font-size: 17px;
+    font-weight: bold;
+  } */
+  
+  /* sideDetail*/
+
+  .ExpandedCard1 {
+    min-width: 400px;
+    min-height: 400PX;
+   
+    background-color: rgb(73, 214, 160);
+    z-index: 9;
+    left: 13rem;
+    border-radius: 1rem;
+    display: flex; 
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-around; */
+    padding: 1rem;
+  }
+  .ExpandedCard > img {
+    width: 400px;
+    height: 270px; 
+  }
+  .ExpandedCard > span:nth-of-type(1) {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px white;
+  }
+  .ExpandedCard > span:nth-of-type(2) {
+    color: rgb(236, 236, 236);
+    font-size: 15px;
+  }
+ 
+  

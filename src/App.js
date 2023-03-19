@@ -1,35 +1,40 @@
-
+import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import Users from './pages/Users';
-import Messages from './pages/Messages';
-import Dashboard from './pages/Dashboard';
-import Analytics from './pages/Analytics';
+import React,{useState,useEffect} from 'react'
 
-import Order from './pages/Order';
-import Saved from './pages/Saved';
-import Setting from './pages/Setting';
-import Filemanagers from './pages/Filemanagers';
-import Sidebar from './componenets/Sidebar';
+import Imgcard from './Imgcard/Imgcard';
+import Datafilter from './DataFilter/Datafilter';
+
+
 
 function App() {
+  const[datesss,setdates]=useState("");
+const[roverss,setroverss]=useState("");
+const[cam,setcam]=useState("");
+const[btnsearch1,setbtnsearch1]=useState(0);
+
+  
+  const btnsearch=(rovers,camera,datess)=>{
+    
+   
+    setdates(datess);
+    setroverss(rovers);
+    setcam(rovers);
+    setbtnsearch1(1)
+ }
+
+ 
+  
   return (
-    <>
-     <Router>
-      <Sidebar>
-      <Routes>
-        <Route path="/" element={<Dashboard />}></Route>
-        <Route path="/users" element={<Users />}></Route>
-        <Route path="/messages" element={<Messages />}></Route>
-        <Route path="/analytics" element={<Analytics />}></Route>
-        <Route path="/file-manager" element={<Filemanagers/>}></Route>
-        <Route path="/order" element={<Order />}></Route>
-        <Route path="/saved" element={<Saved />}></Route>
-        <Route path="/setting" element={<Setting />}></Route>
-      </Routes>
-      </Sidebar>
-     </Router>
-    </>
+    <div className="App">
+      {/* <div>
+        <Datafilter btnsearch={btnsearch}/>
+      </div> */}
+      <div>
+        <Imgcard />
+        
+      </div>
+    </div>
   );
 }
 
